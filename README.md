@@ -168,7 +168,6 @@ Acesse o código-fonte e o histórico de commits do projeto:
 ## ✉️ 8. Contato
 
 - **E-mail de suporte:** `contato@turmadobem.org.br`
-- **Issues do repositório:** [Registrar ou consultar uma issue no GitHub](https://github.com/lazevedo2000-sudo/Portal_Turma_do_Bem/issues)
 
 ---
 
