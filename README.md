@@ -84,8 +84,10 @@ Portal_Turma_do_Bem/
 │   ├── sql.png
 │   └── TDB.png
 ├── js/
+│   └── comoFunciona.js
 │   ├── faq.js
 │   └── script.js
+│   └── solucao.js
 ├── cadastro.html
 ├── comoFunciona.html
 ├── contato.html
