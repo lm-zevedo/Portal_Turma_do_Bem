@@ -1,6 +1,6 @@
 # 💙 Portal Turma do Bem
 
-> Projeto desenvolvido para a Sprint 01 da disciplina de **Front-End Design Engineering**.
+> Projeto desenvolvido para a Sprint 02 da disciplina de **Front-End Design Engineering**.
 
 ---
 
@@ -21,23 +21,24 @@
 
 O **Portal Turma do Bem** é uma plataforma web voltada para promover o acesso à saúde bucal, conectando voluntários, beneficiários e apoiadores de causas sociais relacionadas à odontologia.
 
-O sistema apresenta a proposta da organização, fornece informações transparentes, assegura navegação fluida entre seções desktop e disponibiliza canais de comunicação estruturados
+O sistema apresenta a proposta da organização, fornece informações transparentes, assegura navegação fluida entre seções desktop e disponibiliza canais de comunicação estruturados, agora contando com funcionalidades interativas.
 
 ---
 
 ## 💡 2. Problema Abordado e Solução
 
 - **Problema:** A carência de acesso a tratamento odontológico adequado para populações em situação de vulnerabilidade social e jovens em busca de oportunidades.
-- **Solução:** Uma interface web em HTML5 e CSS3 que centraliza informações institucionais, propicia uma experiência imersiva e evidencia a atuação da rede de dentistas parceiros.
+- **Solução:** Uma interface web moderna e interativa que centraliza informações institucionais, propicia uma experiência imersiva e evidencia a atuação da rede de dentistas parceiros, utilizando tecnologias web atualizadas.
 
 ---
 
 ## 🚀 3. Tecnologias Utilizadas
 
-De acordo com as diretrizes técnicas da Sprint 01:
+De acordo com as diretrizes técnicas da Sprint 02:
 
-- **HTML5 Semântico:** Estruturação lógica das páginas com elementos como `<header>`, `<nav>`, `<main>`, `<section>` e `<footer>`.
+- **HTML5 Semântico:** Estruturação lógica das páginas.
 - **CSS3 Puro:** Estilização sem utilização de frameworks externos.
+- **JavaScript:** Implementação de funcionalidades interativas e dinamismo nas páginas.
 - **Git e GitHub:** Ferramentas de versionamento, controle de histórico e colaboração em equipe.
 
 ---
@@ -49,40 +50,51 @@ A organização interna dos diretórios e arquivos do repositório segue a estru
 ```text
 Portal_Turma_do_Bem/
 ├── css/
-│   └── contato.css
-│   └── faq.css
-│   └── quemsomos.css
-│   └── sobre.css
-│   └── style.css      
+│   ├── cadastro.css
+│   ├── contato.css
+│   ├── faq.css
+│   ├── login.css
+│   ├── QuemSomos.css
+│   ├── sobre.css
+│   ├── solucao.css
+│   └── style.css
 ├── Img/
-│   └── contato.png
-│   └── css.png
-│   └── faq.png
+│   ├── contato.png
+│   ├── css.png
+│   ├── faq.png
 │   ├── Gustavo.png
-│   └── home.png
-│   └── html.png
-│   └── icon.ico
-│   └── icon.png
-│   └── iconePerfil.png
-│   └── impacto.png
-│   └── java.png
+│   ├── home.png
+│   ├── html.png
+│   ├── icon.ico
+│   ├── icon.png
+│   ├── iconePerfil.png
+│   ├── impacto.png
+│   ├── java.png
 │   ├── Jonatas.png
-│   └── logo.pnh
+│   ├── logo.png
 │   ├── Lucca.png
 │   ├── Miguel.png
-│   └── python.png
-│   └── quemsomos.png
-│   └── roadmap.png
-│   └── ryan.png
-│   └── sobre.png
-│   └── solucao.png
-│   └── sql.png
-│   └── TDB.png   
-├── index.html              
-├── sobre.html               
-├── quemsomos.html
-├── faq.html
+│   ├── problema.pnj.avif
+│   ├── python.png
+│   ├── quemsomos.png
+│   ├── roadmap.png
+│   ├── ryan.png
+│   ├── sobre.png
+│   ├── solucao.png
+│   ├── sql.png
+│   └── TDB.png
+├── js/
+│   ├── faq.js
+│   └── script.js
+├── cadastro.html
+├── comoFunciona.html
 ├── contato.html
+├── faq.html
+├── index.html
+├── login.html
+├── quemSomos.html
+├── simulacao.html
+├── sobre.html
 └── README.md
 ```
 
@@ -90,13 +102,17 @@ Portal_Turma_do_Bem/
 
 ## 👥 5. Autores e Créditos
 
+<div align="center">
+
 | Foto | Nome Completo | RM | Turma | Redes / Links |
-| --- | --- | --- | --- | --- |
+| :---: | :--- | :---: | :---: | :--- |
 | <img src="Img/Gustavo.png" width="80px" height="120px" alt="Gustavo"> | Gustavo Almeida | 576039 | 1TDSPR | [GitHub](https://github.com/goliveiraalmeida) / [LinkedIn](https://www.linkedin.com/in/goliveiraalmeida/) |
 | <img src="Img/Jonatas.png" width="80px" height="120px" alt="Jonatas"> | Jonatas Ferreira | 576943 | 1TDSPR | [GitHub](https://github.com/jonatazf) / [LinkedIn](https://www.linkedin.com/in/jonatazf/) |
 | <img src="Img/Lucca.png" width="80px" height="120px" alt="Lucca"> | Lucca Floriano | 575494 | 1TDSPR | [GitHub](https://github.com/luccafloriano-7) / [LinkedIn](https://github.com/luccafloriano-7) |
 | <img src="Img/Miguel.png" width="80px" height="120px" alt="Miguel"> | Luiz Azevedo | 575245 | 1TDSPR | [GitHub](https://github.com/lazevedo2000-sudo) / [LinkedIn](https://github.com/lazevedo2000-sudo) |
 | <img src="Img/ryan.png" width="80px" height="120px" alt="Ryan"> | Ryan Prandi | 576358 | 1TDSPR | [GitHub](https://github.com/prandiryan) / [LinkedIn](https://www.linkedin.com/in/ryan-prandi) |
+
+</div>
 
 ---
 
@@ -117,11 +133,25 @@ Quem Somos
 Sobre
 ![Sobre](Img/sobre.png)
 
+Solução (Como Funciona)
+![Como Funciona](Img/printSolucao1.png)
+
+Solução (Exemplo na prática)
+![Exemplo na prática](Img/printSolucao2.png)
+
 Perguntas Frequentes (FAQ)
 ![Perguntas Frequentes (FAQ)](Img/faq.png)
 
 Contato
 ![Contato](Img/contato.png)
+
+Login
+![Login](Img/login.png)
+
+Cadastro
+![Cadastro](Img/cadastro.png)
+
+
 
 ---
 
@@ -140,5 +170,3 @@ Acesse o código-fonte e o histórico de commits do projeto:
 
 ---
 
-**Portal Turma do Bem**  
-*Projeto acadêmico desenvolvido para a Sprint 01 de Front-End Design Engineering.*
