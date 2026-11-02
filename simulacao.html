@@ -16,14 +16,16 @@
 
   <body>
     <header>
-      <a href="index.html"><img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo"></a>
+      <a href="index.html"
+        ><img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo"
+      /></a>
 
       <nav class="menu-centro">
         <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./quemSomos.html">Quem Somos</a></li>
           <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./como-funciona.html" class="ativo">Solução</a></li>
+          <li><a href="./comoFunciona.html" class="ativo">Solução</a></li>
           <li><a href="./faq.html">FAQ</a></li>
           <li><a href="./contato.html">Contato</a></li>
         </ul>
@@ -108,19 +110,19 @@
 
           <div class="grade-3">
             <div class="card-solucao">
-              <span class="icone">💛</span>
+              <span class="icone" aria-hidden="true">💛</span>
               <h3>R$ 38,20</h3>
               <p>doados em 2026</p>
             </div>
 
             <div class="card-solucao">
-              <span class="icone">🧾</span>
+              <span class="icone" aria-hidden="true">🧾</span>
               <h3>27</h3>
               <p>contribuições</p>
             </div>
 
             <div class="card-solucao">
-              <span class="icone">😁</span>
+              <span class="icone" aria-hidden="true">😁</span>
               <h3>Sorriso na Escola</h3>
               <p>campanha que mais recebeu suas doações</p>
             </div>
@@ -144,6 +146,36 @@
         </div>
       </section>
 
+      <section class="bloco">
+        <h2 class="titulo-secao">Simule a sua compra</h2>
+        <p class="intro">
+          Digite o valor de uma compra e veja quanto o parceiro repassaria para
+          a Turma do Bem.
+        </p>
+
+        <div class="simulador">
+          <label for="valor-compra">Valor da compra (R$)</label>
+          <input
+            type="text"
+            id="valor-compra"
+            inputmode="decimal"
+            placeholder="Ex.: 47,60"
+          />
+          <button type="button" id="botao-calcular" class="botao-faixa">
+            Calcular doação
+          </button>
+        </div>
+
+        <p id="mensagem-simulador" class="simulador-mensagem"></p>
+
+        <div id="resultado-simulador" class="simulador-resultado escondido">
+          <p class="simulador-total">
+            Valor para a Turma do Bem (1% da compra):
+            <strong id="valor-total"></strong>
+          </p>
+        </div>
+      </section>
+
       <section class="faixa-final">
         <h2>Ficou com alguma dúvida?</h2>
         <p>Confira as perguntas frequentes ou fale com a gente.</p>
@@ -151,10 +183,10 @@
       </section>
     </main>
 
-    
     <footer>
       <p>© 2026 Projeto Turma do Bem | FIAP</p>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/solucao.js"></script>
   </body>
 </html>

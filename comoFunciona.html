@@ -59,7 +59,7 @@
 
         <div class="grade-3">
           <div class="card-solucao">
-            <span class="icone">📉</span>
+            <span class="icone" aria-hidden="true">📉</span>
             <h3>Doações irregulares</h3>
             <p>
               A maior parte da arrecadação vem de doações tradicionais, que são
@@ -68,7 +68,7 @@
           </div>
 
           <div class="card-solucao">
-            <span class="icone">📝</span>
+            <span class="icone" aria-hidden="true">📝</span>
             <h3>Processos manuais</h3>
             <p>
               Registrar e organizar cada contribuição exige trabalho manual, que
@@ -77,7 +77,7 @@
           </div>
 
           <div class="card-solucao">
-            <span class="icone">🔍</span>
+            <span class="icone" aria-hidden="true">🔍</span>
             <h3>Pouca rastreabilidade</h3>
             <p>
               É difícil saber de onde veio cada recurso, quanto cada campanha
@@ -93,49 +93,100 @@
           Do pagamento na loja até o sorriso de um jovem atendido, cada etapa é
           registrada.
         </p>
+        <p class="dica-passos">Clique em cada etapa para ver os detalhes.</p>
 
         <ol class="passos">
-          <li class="passo">
+          <li class="passo" id="passo-1">
             <span class="passo-numero">1</span>
-            <h3>A empresa vira parceira</h3>
-            <p>
+            <h3>
+              <button
+                type="button"
+                class="passo-botao"
+                id="botao-passo-1"
+                aria-expanded="false"
+                aria-controls="texto-passo-1"
+              >
+                A empresa vira parceira
+              </button>
+            </h3>
+            <p id="texto-passo-1" class="escondido">
               Comércios e empresas aderem ao projeto, cadastram suas maquininhas
               de cartão e definem um percentual das vendas para repassar à Turma
               do Bem.
             </p>
           </li>
 
-          <li class="passo">
+          <li class="passo" id="passo-2">
             <span class="passo-numero">2</span>
-            <h3>O cliente faz uma compra</h3>
-            <p>
+            <h3>
+              <button
+                type="button"
+                class="passo-botao"
+                id="botao-passo-2"
+                aria-expanded="false"
+                aria-controls="texto-passo-2"
+              >
+                O cliente faz uma compra
+              </button>
+            </h3>
+            <p id="texto-passo-2" class="escondido">
               Na hora de pagar, a maquininha oferece a opção de arredondar o
               valor ou somar uma pequena doação à compra.
             </p>
           </li>
 
-          <li class="passo">
+          <li class="passo" id="passo-3">
             <span class="passo-numero">3</span>
-            <h3>A contribuição é registrada</h3>
-            <p>
+            <h3>
+              <button
+                type="button"
+                class="passo-botao"
+                id="botao-passo-3"
+                aria-expanded="false"
+                aria-controls="texto-passo-3"
+              >
+                A contribuição é registrada
+              </button>
+            </h3>
+            <p id="texto-passo-3" class="escondido">
               Cada transação gera automaticamente uma contribuição, com valor,
               data, hora, maquininha e parceiro de origem.
             </p>
           </li>
 
-          <li class="passo">
+          <li class="passo" id="passo-4">
             <span class="passo-numero">4</span>
-            <h3>O recurso vai para uma campanha</h3>
-            <p>
+            <h3>
+              <button
+                type="button"
+                class="passo-botao"
+                id="botao-passo-4"
+                aria-expanded="false"
+                aria-controls="texto-passo-4"
+              >
+                O recurso vai para uma campanha
+              </button>
+            </h3>
+            <p id="texto-passo-4" class="escondido">
               O valor arrecadado é direcionado a uma campanha da Turma do Bem,
               com meta e prazo definidos.
             </p>
           </li>
 
-          <li class="passo">
+          <li class="passo" id="passo-5">
             <span class="passo-numero">5</span>
-            <h3>O impacto é acompanhado</h3>
-            <p>
+            <h3>
+              <button
+                type="button"
+                class="passo-botao"
+                id="botao-passo-5"
+                aria-expanded="false"
+                aria-controls="texto-passo-5"
+              >
+                O impacto é acompanhado
+              </button>
+            </h3>
+            <p id="texto-passo-5" class="escondido">
               O doador acompanha em um painel quanto doou e para quais campanhas
               o dinheiro foi.
             </p>
@@ -148,7 +199,7 @@
 
         <div class="grade-3">
           <div class="card-solucao">
-            <span class="icone">🙋</span>
+            <span class="icone" aria-hidden="true">🙋</span>
             <h3>Doadores</h3>
             <p>
               Pessoas físicas e jurídicas doam sem sair da rotina, escolhem
@@ -157,7 +208,7 @@
           </div>
 
           <div class="card-solucao">
-            <span class="icone">🤝</span>
+            <span class="icone" aria-hidden="true">🤝</span>
             <h3>Parceiros</h3>
             <p>
               Comércios e empresas associam sua marca a uma causa social e
@@ -166,7 +217,7 @@
           </div>
 
           <div class="card-solucao">
-            <span class="icone">🦷</span>
+            <span class="icone" aria-hidden="true">🦷</span>
             <h3>Turma do Bem</h3>
             <p>
               A organização recebe recursos de forma contínua, reduz o trabalho
@@ -189,5 +240,7 @@
     <footer>
       <p>© 2026 Projeto Turma do Bem | FIAP</p>
     </footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/comoFunciona.js"></script>
   </body>
 </html>
