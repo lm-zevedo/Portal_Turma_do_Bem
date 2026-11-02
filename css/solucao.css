@@ -265,6 +265,146 @@
   color: #E8820C;
 }
 
+/* Simulador de doação (simulacao.html) */
+.simulador {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.simulador label {
+  font-weight: 700;
+}
+
+.simulador input {
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 2px solid #F5C518;
+  border-radius: 8px;
+}
+
+.simulador input:focus {
+  outline: none;
+  border-color: #E8820C;
+}
+
+.simulador button {
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 12px 24px;
+  width: auto;        
+  height: auto;       
+  flex-shrink: 0;     
+}
+
+.simulador-mensagem {
+  max-width: 480px;
+  margin: 16px auto 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.simulador-mensagem.sucesso {
+  color: #2e7d32;
+}
+
+.simulador-mensagem.erro {
+  color: #c0392b;
+}
+
+.simulador-resultado {
+  max-width: 480px;
+  margin: 16px auto 0;
+  padding: 18px;
+  line-height: 1.8;
+  background-color: #fff;
+  border-left: 5px solid #E8820C;
+  border-radius: 10px;
+}
+
+.simulador-total {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.simulador-total strong {
+  color: #E8820C;
+}
+
+.escondido {
+  display: none;
+}
+
+/* Acordeão do Passo a passo */
+.dica-passos {
+  margin: -24px auto 28px;
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+}
+
+.passos .passo-botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  height: auto;
+  margin: 6px 0 0;
+  padding: 6px 0;
+  background: none;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  color: #222222;
+  cursor: pointer;
+}
+
+/* sinal de + quando fechado */
+.passo-botao::after {
+  content: "+";
+  font-size: 22px;
+  color: #E8820C;
+}
+
+/* sinal de − quando aberto */
+.passo-botao[aria-expanded="true"]::after {
+  content: "−";
+}
+
+.passos .passo-botao:hover {
+  background: none;
+  box-shadow: none;
+  color: #E8820C;
+}
+
+/* contorno ao navegar pelo teclado (Tab) */
+.passo-botao:focus-visible {
+  outline: 2px solid #E8820C;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* passo aberto ganha destaque */
+.passo-aberto {
+  border-color: #E8820C;
+  background-color: #fff;
+}
+
+.passo p {
+  margin-top: 8px;
+}
+
 /* Media queries */
 @media (min-width: 768px) {
   .solucao-topo {
@@ -293,6 +433,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .simulador {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .simulador input {
+    flex: 1;
+  }
+
+  .simulador label {
+    width: 100%;
   }
 }
 
@@ -338,6 +492,10 @@
   .passo h3 {
     font-size: 1.05rem;
   }
+}
+
+.passos {
+  align-items: flex-start;
 }
  
 /* Telas grandes >= 1300px */
