@@ -4,6 +4,10 @@ padding: 0;
 box-sizing: border-box;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 :root {
 --verde-turma: #C9C916;
 --laranja: #E8820C;
